@@ -1,0 +1,14 @@
+{
+  "name": "memo-pwa",
+  "version": "1.0.0",
+  "description": "This is a progressive web application to memorize your todo jobs.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "agBeta",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
