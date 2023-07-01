@@ -1,0 +1,4 @@
+/node_modules
+/tsBuilt/**/*
+/server/node_modules
+/client/node_modules
