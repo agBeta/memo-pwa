@@ -1,4 +1,4 @@
 /** @type {string} */
-let a;
+let b;
 
-a = 5;
+b = 5;
