@@ -4,5 +4,6 @@
         "checkJs": true,
         "strict": true,
         "outDir": "./tsBuilt/just-to-turn-off-tsconfig-error"
-    }
+    },
+    "include": ["./src/**/*.js"]
 }
