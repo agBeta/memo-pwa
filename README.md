@@ -1,2 +1,3 @@
 # memo-pwa
-A memo board progressive web app
+
+This is a progressive web application to memorize your todo jobs. Technologies that are used:
