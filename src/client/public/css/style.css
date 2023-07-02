@@ -4,19 +4,31 @@
     --memo-bg-clr: #bbf70629;
 }
 
+/*  Side Note:
+    There are some nuisances in using fonts. You can watch youtube video "How to host your own fonts made simple" 
+    by Kevin Powell. You can also read the following article:
+        https://medium.com/@aitareydesign/understanding-of-font-formats-ttf-otf-woff-eot-svg-e55e00a1ef2.
+    
+    Generally speaking, use woff2 and woff. See also https://stackoverflow.com/a/11002874.
+*/
 @font-face {
-    /*  Side Note:
-        There are some nuisances in using fonts. You can watch youtube video "How to host your own fonts made simple" 
-        by Kevin Powell. You can also read the following article:
-            https://medium.com/@aitareydesign/understanding-of-font-formats-ttf-otf-woff-eot-svg-e55e00a1ef2.
-        
-        Generally speaking, use woff2 and woff. See also https://stackoverflow.com/a/11002874.
-    */
-    font-family: "pixel";
-    src: url("/public/fonts/Advanced_Pixel-7.woff2") format("woff2");
-    font-weight: normal;
+    font-family: "FiraCode";
+    src:
+        local("FiraCode") url("/public/fonts/FiraCode-Regular.woff2") format("woff2"),
+        url("/public/fonts/FiraCode-Regular.woff") format("woff");
     font-style: normal;
+    font-weight: normal;
 }
+
+@font-face {
+    font-family: "FiraCode";
+    src:
+        local("FiraCode") url("/public/fonts/FiraCode-Bold.woff2") format("woff2"),
+        url("/public/fonts/FiraCode-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: bold;
+}
+
 
 *,
 *::after,
@@ -26,12 +38,12 @@
 
 body {
     margin: 0;
-    /* If for whatever reason the browser could not load "pixel", the backup fonts (coming after) will be used. */
-    font-family: "pixel", 'Courier New', Courier, monospace;
+    font-family: "FiraCode", 'Courier New', Courier, monospace;
+
     width: 100%;
     /* Remember: Always avoid setting "height". Set "min-height" if necessary. */
     min-height: 200vh;
-    
+
     background-color: var(--main-bg-clr);
 
     /*  We need the following so that <main> would stretch the whole height. We tried "height:100%" on <main> but it
@@ -44,6 +56,7 @@ body {
 main {
     position: relative;
     width: 100%;
+    color: white;
 }
 
 .board {
@@ -51,4 +64,3 @@ main {
     inset: 8px 8px;
     border: 1px solid white;
 }
-
