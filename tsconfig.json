@@ -3,7 +3,14 @@
         "allowJs": true,
         "checkJs": true,
         "strict": true,
-        "outDir": "./tsBuilt/just-to-turn-off-tsconfig-error"
+        "outDir": "./tsBuilt/just-to-turn-off-tsconfig-error",
+        "module": "es2020",
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true
     },
-    "include": ["./src/**/*.js"]
+    "include": ["./src/**/*.js"],
+    "types": [ 
+        "node",
+        "express"
+     ],
 }
