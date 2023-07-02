@@ -21,7 +21,7 @@ module.exports = {
     },
     env: {
         browser: true,
-        es6: true,
+        es2020: true,
         node: true,
         serviceworker: true
     },
