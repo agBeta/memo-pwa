@@ -34,6 +34,7 @@ if (process.env.NODE_ENV === "development") {
          * @returns {string} ip address of the request
          */
         function (req, res) {
+            // "req.ip" may return ::ffff:127.0.0.1 on localhost. It is ok. Read more on https://stackoverflow.com/a/33790357.
             return req.ip;
         }
     );
