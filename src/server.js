@@ -6,7 +6,6 @@ import { default as morgan } from "morgan";
 /*  We do not access to __dirname out of the box when using es6 modules in node.
     See https://stackoverflow.com/questions/46745014/alternative-for-dirname-in-node-js-when-using-es6-modules 
 
-    Refresher_Note: 
     Make sure you have added "module": "es2020" and "moduleResolution": "Node" to your tsconfig file. Read more in 
     the following links: 
         https://stackoverflow.com/a/72599201.
